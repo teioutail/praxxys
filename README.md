@@ -38,6 +38,11 @@ To run the project, use the artisan serve command
 $ php artisan serve
 ```
 
+To generate key, run the command below
+```sh
+$ php artisan key generate
+```
+
 To compile the VueJS front end run
 ```sh
 $ npm run watch

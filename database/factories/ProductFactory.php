@@ -39,7 +39,7 @@ class ProductFactory extends Factory
         'name' => $this->faker->name(),
         'category' => 'Manga',
         'description' => $this->faker->paragraph(),
-        'date_time' => null
+        'date_time' => $this->faker->dateTime() 
         ];
     }
 }
