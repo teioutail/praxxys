@@ -29,7 +29,7 @@
       <form action="{{ route('login') }}" method="POST">
         @csrf
         <div class="input-group mb-3">
-          <input type="email" id="identity" name="identity" class="form-control" placeholder="Email">
+          <input type="text" id="identity" name="identity" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
