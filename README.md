@@ -1,7 +1,7 @@
 
 ### Installation
 
-Download/Clone the the project and copy to local directory and go to the path in terminal/cmd and and install plugins via composer.
+Download/Clone the project to local directory. Go to the path in terminal/cmd and install plugins via composer.
 
 Composer plugins Installation:
 ```sh
@@ -11,8 +11,17 @@ NPM plugins installation:
 ```sh
 $ npm install
 ```
-
-Setup the database credentails in config/database.php. After the database setup, run laravel migrate command.
+#### Database
+Update .env.example to .env  and setup the following configuration:
+```sh
+DB_CONNECTION=mysql
+DB_HOST=<host>
+DB_PORT=<port>
+DB_DATABASE=<dbname>
+DB_USERNAME=<username>
+DB_PASSWORD=
+```
+After the database setup, run laravel migrate command.
 ```sh
 $ php artisan migrate
 ```
@@ -21,6 +30,8 @@ To setup dummy data, run laravel db seed command
 ```sh
 $ php artisan db:seed
 ```
+
+
 #### Run
 To run the project, use the artisan serve command
 ```sh
